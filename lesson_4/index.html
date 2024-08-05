@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lesson 4</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerWrapper">
+        <h1>Css position (⊙_⊙;)</h1>
+      </div>
+    </header>
+    <main>
+      <h4>Всего существует 5 значений для свойства position в CSS</h4>
+      <ul>
+        <li>
+          <span>Static</span> - значение и поведение элементов по умолчанию
+        </li>
+        <li>
+          <span>Fixed</span> - вырывает элемент из потока и фиксирует на месте,
+          через top, bottom, left, right можно управлять положением. Элемент
+          становится невидимым для других элементов и не влияет на scroll
+        </li>
+        <li>
+          <span>Sticky</span> - позиционируется в зависимости от положения
+          прокрутки пользователя, он позиционируется relative до тех пор, пока в
+          окне просмотра не встретится заданная позиция смещения — тогда он
+          «застревает» на месте
+        </li>
+        <li>
+          <span>Relative</span> - элемент с position: relative; располагается
+          относительно своего нормального положения.Установка свойств top,
+          right, bottom и left элемента с относительным позиционированием
+          приведет к тому, что он будет отрегулирован в сторону от своего
+          нормального положения. Элемент не вырывается из потока элементов и
+          'сохраняет' за собой место.
+        </li>
+        <li>
+          <span>Absolute</span> - универсальный способ пододвинуть элемент.
+          Элемент вырывается из потока и позиционируется относительно body или
+          относительно своего первого отпозиционированного родителя.
+        </li>
+      </ul>
+      <div class="box">static</div>
+      <div class="box relativeBox">relative</div>
+      <div class="box absoluteBox">absolute</div>
+      <p>
+        Управлять наложением элементов друг на друга можно с помощью свойства
+        <span>z-index</span>, он выставляется в числовом значении.
+      </p>
+      <p>
+        Элемент с самым высоким значением будет ближе всего к пользователю. Так
+        мы можем управлять этой 'аппликацией' из элементов
+      </p>
+      <a class="practice" href="./task_fe-css-position-movie-card/">Practice</a>
+    </main>
+  </body>
+</html>

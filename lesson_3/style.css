@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 40px;
+}
+
+li {
+  /* указывая размер шрифта в rem вы зависите от корневого значения и это удобно: изменив значение в корне вы измените и связанные с ним rem */
+  font-size: 0.5rem;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+}
+
+.smallSquare {
+  height: 50px;
+  width: 50px;
+}
+
+.subheading {
+  margin-left: 27px;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.section {
+  /* vh (viewport height) - отсчитывается от высоты окна в браузере */
+  height: 20vh;
+  /* vw (viewport width) - адаптивная величина отсчитывающаяся от ширины окна в браузере  */
+  width: 60vw;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 132);
+  font-size: 20px;
+}
+
+.sectionArticle {
+  /* отсчет в em идет от размера шрифта родителя */
+  font-size: 0.5em;
+  width: 50%;
+  height: 40%;
+  border-radius: 5px;
+  background-color: rgb(141, 218, 254);
+}
+
+.red {
+  margin: 5px auto 15px;
+  /* margin-bottom: 20px; */
+  background-color: rgb(251, 122, 122);
+}
+
+.orange {
+  border-radius: 20%;
+  padding: 40px;
+  background-color: #ffe090;
+}
+
+.green {
+  border: 3px dotted rgb(249, 116, 249);
+  background-color: #aeff78;
+}
