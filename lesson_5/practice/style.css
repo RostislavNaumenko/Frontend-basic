@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+
+main {
+  width: 400vh;
+}
+.baground {
+  margin-top: 20px;
+  display: flex;
+}
+
+.baground-img {
+  position: absolute;
+  width: 100%;
+}
+
+.filling {
+  position: absolute;
+}
