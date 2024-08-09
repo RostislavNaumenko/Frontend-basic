@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+}
+
+body {
+  width: 1200px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.head {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  font-family: "Arial", sans-serif;
+}
+
+.info {
+  margin-right: auto;
+}
+
+.website {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.web-info {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+}
+.navigation {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.servises {
+  margin-left: 28px;
+  display: flex;
+  gap: 40px;
+}
+
+.header-row {
+  width: 100%;
+  position: relative;
+  background-color: #545454;
+  height: 9px;
+}
+.button-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+}
+
+.fa-solid {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 100%;
+  text-align: center;
+  color: #000;
+}
