@@ -1,0 +1,188 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  justify-content: space-evenly;
+  top: 0px;
+  margin: 0;
+  background-color: rgba(36, 157, 227, 0.992);
+  margin-bottom: 20px;
+  z-index: 100;
+}
+
+.categories {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+}
+
+.category {
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+
+/* Стили для input */
+input {
+  max-width: 300px; /* Максимальная ширина */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  gap: 10px;
+}
+
+/* Стили для кнопки */
+button {
+  padding: 10px 20px;
+  background-color: #0975c2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  max-width: 140px;
+  text-align: center;
+}
+
+h1 {
+  margin-left: 40px;
+  color: white;
+  cursor: default;
+}
+main {
+  flex: 1;
+  margin: 0 100px;
+}
+
+.container-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.product-card {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 220px;
+  height: 350px;
+}
+.product-title {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 163px;
+  height: 200px;
+}
+
+.card-img {
+  object-fit: cover;
+  /* приоритет top по вертикали  */
+  /* центр по горизонтали */
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-btn {
+  background-color: rgba(40, 40, 40, 0.5);
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+.prev-btn {
+  left: -30px; /* Position left button */
+}
+
+.next-btn {
+  right: -30px; /* Position right button */
+}
+
+.gallery-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  margin-top: 40px;
+  background-color: rgba(36, 157, 227, 0.992);
+}
+
+.fotter-wraper {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 7px solid #fff;
+  border-bottom-color: rgba(36, 157, 227, 0.992);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-hide {
+  display: none;
+}
