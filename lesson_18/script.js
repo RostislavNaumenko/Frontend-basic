@@ -4,13 +4,12 @@ const amountButton = document.querySelector("#amount-button");
 const amountInput = document.querySelector("#amount-input");
 
 let token = "https://dummyjson.com/products";
-let data;
 
 const getProducts = (token) => {
   loader.classList.toggle("loader-hide");
   setTimeout(async () => {
     const res = await fetch(token);
-    data = await res.json();
+    const data = await res.json();
     //Set
     const uniqueCategories = new Set();
     data.products.map((product) => {
@@ -135,6 +134,7 @@ amountButton.addEventListener("click", () => {
   } else {
     deleteCards();
     token = `https://dummyjson.com/products?limit=${amount}&skip=10`;
+    deleteCategory();
     getProducts(token);
   }
 });
@@ -142,6 +142,13 @@ amountButton.addEventListener("click", () => {
 const deleteCards = () => {
   const cards = document.querySelectorAll(".product-card");
   cards.forEach((e) => {
+    e.remove();
+  });
+};
+
+const deleteCategory = () => {
+  const categories = document.querySelectorAll(".category");
+  categories.forEach((e) => {
     e.remove();
   });
 };
